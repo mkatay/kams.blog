@@ -4,8 +4,10 @@ import { MyButton } from "../components/MyButton";
 import { useContext } from "react";
 import { LangContext } from "../contexts/LangContext";
 
+
 export const Notfound = () => {
     const { language, handleChangeLanguage, getElement } = useContext(LangContext);
+
   return (
     <div className="md:pl-[70px] relative bg-black  h-screen w-full md:flex">
       <div className=" h-screen bg-black  flex flex-col justify-center items-center md:items-start lg:w-full px-2.5 md:px-0">
@@ -17,7 +19,7 @@ export const Notfound = () => {
         </h3>
         
         <div className="flex items-center bg-black ">
-         <MyButton text='Back to Home'/>
+         <MyButton text='Back to Home' />
         </div>
       </div>
       <div className="relative right-0 h-screen hidden md:flex ">

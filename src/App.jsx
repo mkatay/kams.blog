@@ -1,19 +1,12 @@
-import { Example } from "./components/Example"
-import { Notfound } from "./pages/NotFound"
 import {LangProvider} from './contexts/LangContext'
-import { SwitchLang } from "./components/SwitchLang"
-
+import {RouterProvider} from 'react-router-dom'
+import { router } from "./router"
 
 function App() {
   
   return (
     <LangProvider>
-      {/*} <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  <Example/>*/}
-  <SwitchLang/>
-  <Notfound/>
+       <RouterProvider router={router} />;
     </LangProvider>
     
 
